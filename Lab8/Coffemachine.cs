@@ -52,6 +52,11 @@ namespace Lab8
             grainsBox.Text = Convert.ToString(Grains);
             milkBox.Text = Convert.ToString(Milk);
         }*/
+
+        private void Hello()
+        {
+            Console.WriteLine("Hello world");
+        }
         public async void AmericanoMaker(Label label1, CoffemacineForm form)
         {
             if (AmericanoIngreedientsCheck(Water, Grains, Milk, label1))
