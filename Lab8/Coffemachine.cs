@@ -56,9 +56,9 @@ namespace Lab8
         {
             if (AmericanoIngreedientsCheck(Water, Grains, Milk, label1))
             {
-                Water -= 50;
-                Grains -= 20;
-                Milk -= 30;
+                Water -= 100;
+                Grains -= 100;
+                Milk -= 50;
                 await Task.Delay(5000);
                 label1.Text = "Заваривание американо...";
                 LoadingBarMaking(label1, form);
