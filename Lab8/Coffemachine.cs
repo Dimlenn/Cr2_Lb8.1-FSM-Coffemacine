@@ -64,7 +64,7 @@ namespace Lab8
                 LoadingBarMaking(label1, form);
             }
         }
-        public void StartIngreedientsCheck(Button button1, Button button2, Label label1)
+        public async void StartIngreedientsCheck(Button button1, Button button2, Label label1)
         {
             button1.Visible = false;
             button2.Visible = false;
