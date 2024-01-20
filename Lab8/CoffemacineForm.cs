@@ -14,7 +14,7 @@ using Lab8;
 
 namespace Lab8
 {
-    public partial class Form1 : Form
+    public partial class CoffemacineForm : Form
     {
         enum MachineState
         {
@@ -35,7 +35,7 @@ namespace Lab8
         FSM<MachineState, MachineEvent> FSM;
         Coffemachine coffemachine = new Coffemachine();
 
-        public Form1()
+        public CoffemacineForm()
         {
             InitializeComponent();
 

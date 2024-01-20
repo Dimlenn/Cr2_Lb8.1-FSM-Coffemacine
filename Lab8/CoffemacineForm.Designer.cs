@@ -1,6 +1,6 @@
 ﻿namespace Lab8
 {
-    partial class Form1
+    partial class CoffemacineForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.

@@ -46,16 +46,25 @@ namespace Lab8
         public int Milk { get; set; } = 30;
         private int minimal = 100;
         private int minimalMilk = 50;
-        public async void AmericanoMaker(Label label1, Form1 form)
+        /*public void ShowIngreedients()
+        {
+            waterBox.Text = Convert.ToString(Water);
+            grainsBox.Text = Convert.ToString(Grains);
+            milkBox.Text = Convert.ToString(Milk);
+        }*/
+        public async void AmericanoMaker(Label label1, CoffemacineForm form)
         {
             if (AmericanoIngreedientsCheck(Water, Grains, Milk, label1))
             {
+                Water -= 50;
+                Grains -= 20;
+                Milk -= 30;
                 await Task.Delay(5000);
                 label1.Text = "Заваривание американо...";
                 LoadingBarMaking(label1, form);
             };
         }
-        public async void CappuchinoMaker(Label label1, Form1 form)
+        public async void CappuchinoMaker(Label label1, CoffemacineForm form)
         {
             await Task.Delay(5000);
             if (CappuchinoIngreedientsCheck(Water, Grains, Milk, label1))
@@ -64,7 +73,7 @@ namespace Lab8
                 LoadingBarMaking(label1, form);
             }
         }
-        public async void StartIngreedientsCheck(Button button1, Button button2, Label label1)
+        public void StartIngreedientsCheck(Button button1, Button button2, Label label1)
         {
             button1.Visible = false;
             button2.Visible = false;
@@ -130,7 +139,7 @@ namespace Lab8
             label1.Text = errorText;
             await Task.Delay(3500);
         }
-        private async void LoadingBarMaking(Label label1, Form1 form)
+        private async void LoadingBarMaking(Label label1, CoffemacineForm form)
         {
             PictureBox pictureBox1 = new PictureBox
             {
