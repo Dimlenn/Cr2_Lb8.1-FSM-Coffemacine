@@ -43,7 +43,7 @@ namespace Lab8
         }*/
         public int Water { get; set; } = 100;
         public int Grains { get; set; } = 100;
-        public int Milk { get; set; } = 40;
+        public int Milk { get; set; } = 30;
         private int minimal = 100;
         private int minimalMilk = 50;
         public async void AmericanoMaker(Label label1, Form1 form)
