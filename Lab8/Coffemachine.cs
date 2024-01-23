@@ -59,7 +59,7 @@ namespace Lab8
         }
         private void Huy()
         {
-            Console.WriteLine("World of huys");
+            Console.WriteLine("Hello huy");
         }
         public async void AmericanoMaker(Label label1, CoffemacineForm form)
         {
