@@ -74,6 +74,8 @@ namespace Lab8
             await Task.Delay(5000);
             if (CappuchinoIngreedientsCheck(Water, Grains, Milk, label1))
             {
+                Water -= 100;
+                Grains -= 100;
                 label1.Text = "Заваривание каппучино...";
                 LoadingBarMaking(label1, form);
             }
