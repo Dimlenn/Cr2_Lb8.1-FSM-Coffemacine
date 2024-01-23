@@ -55,10 +55,7 @@ namespace Lab8
 
         private void Hello()
         {
-            Console.WriteLine("world");
-            Console.WriteLine("world");
-            Console.WriteLine("world");
-            Console.WriteLine("world");
+            Console.ReadLine();
         }
         public async void AmericanoMaker(Label label1, CoffemacineForm form)
         {
