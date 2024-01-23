@@ -57,6 +57,10 @@ namespace Lab8
         {
             Console.WriteLine("world");
         }
+        private void Huy()
+        {
+            Console.WriteLine("Hello huy");
+        }
         public async void AmericanoMaker(Label label1, CoffemacineForm form)
         {
             if (AmericanoIngreedientsCheck(Water, Grains, Milk, label1))
